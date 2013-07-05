@@ -3,6 +3,7 @@
 
 (add-to-list 'load-path user-emacs-directory)
 (require 'init-benchmarking) ;; Measure startup time
+(add-hook 'find-file-hook (lambda () (linum-mode 1))) ;; show line numbers
 
 ;;----------------------------------------------------------------------------
 ;; Which functionality to enable (use t or nil for true and false)
@@ -61,6 +62,7 @@
 (require 'init-git)
 
 (require 'init-cuda-mode)
+(require 'init-c)
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
