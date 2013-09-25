@@ -3,6 +3,7 @@
 
 (add-to-list 'load-path user-emacs-directory)
 (require 'init-benchmarking) ;; Measure startup time
+(add-hook 'find-file-hook (lambda () (linum-mode 1))) ;; show line numbers
 
 ;;----------------------------------------------------------------------------
 ;; Which functionality to enable (use t or nil for true and false)
@@ -25,7 +26,7 @@
 ;;----------------------------------------------------------------------------
 
 (require-package 'wgrep)
-(require-package 'project-local-variables)
+;(require-package 'project-local-variables)
 (require-package 'diminish)
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
@@ -33,15 +34,16 @@
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
-(require 'init-osx-keys)
-(require 'init-gui-frames)
-(require 'init-maxframe)
-(require 'init-proxies)
+;(require 'init-osx-keys)
+;(require 'init-gui-frames)
+;(require 'init-maxframe)
+;(require 'init-proxies)
 (require 'init-dired)
 (require 'init-isearch)
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flycheck)
+(require 'init-yasnippet)
 
 (require 'init-recentf)
 (require 'init-ido)
@@ -58,6 +60,8 @@
 (require 'init-darcs)
 (require 'init-git)
 
+(require 'init-cuda-mode)
+(require 'init-c)
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
