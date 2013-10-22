@@ -84,6 +84,7 @@
 (require 'init-slime)
 (require 'init-clojure)
 (require 'init-common-lisp)
+(require 'init-latex)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
