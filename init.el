@@ -63,6 +63,7 @@
 
 (require 'init-cuda-mode)
 (require 'init-c)
+(require 'init-scala)
 (require 'init-go)
 (require 'init-crontab)
 (require 'init-textile)
