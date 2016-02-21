@@ -70,6 +70,7 @@
 (require 'init-git)
 (require 'init-github)
 
+(require 'init-company) ; this is a completion framework and should come on top
 (require 'init-cuda-mode)
 (require 'init-c)
 (require 'init-scala)
@@ -92,6 +93,7 @@
 (require 'init-ruby-mode)
 (require 'init-rails)
 (require 'init-sql)
+(require 'init-rust)
 
 (require 'init-paredit)
 (require 'init-lisp)
@@ -118,6 +120,7 @@
 (when *is-a-mac*
   (require-package 'osx-location))
 (require-package 'regex-tool)
+(require-package 'toml-mode)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
