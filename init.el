@@ -107,6 +107,7 @@
 (require 'init-rails)
 (require 'init-sql)
 (require 'init-rust)
+(require 'init-docker)
 
 (require 'init-paredit)
 (require 'init-lisp)
