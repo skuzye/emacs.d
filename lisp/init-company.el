@@ -11,4 +11,7 @@
 ;; Reduce the number of characters before company kicks in
 (setq company-minimum-prefix-length 1)
 
+;; Disable lowercase for one plaintext backend (dabbrev)
+(setq company-dabbrev-downcase nil)
+
 (provide 'init-company)
